@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+        "incremental": true,
+        "target": "es2019",
+        "lib": ["es2020"],
+        "outDir": "lib",
+        "module": "commonjs",
+
+        /* Strict Type-Checking Options */
+        "strict": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "strictBindCallApply": true,
+        "strictPropertyInitialization": true,
+        "noImplicitThis": true,
+        "alwaysStrict": true,
+
+        /* Additional Checks */
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+
+        /* Module Resolution Options */
+        "moduleResolution": "node",
+        "baseUrl": ".",
+        "esModuleInterop": true,
+
+        /* Experimental Options */
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        
+        /* Advanced Options */
+        "downlevelIteration": true,
+        "sourceMap": true,
+        "typeRoots": ["./node_modules/@0x/typescript-typings/types", "./node_modules/@types"],
+        "resolveJsonModule": true,
+    },
+    "include": ["./src/**/*.ts", "./test/**/*.ts", "./src/handlers/schemas/*.json"],
+}

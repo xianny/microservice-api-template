@@ -1,0 +1,12 @@
+{
+    "extends": ["@0x/tslint-config"],
+    "rules": {
+        "custom-no-magic-numbers": [true, -1, 0, 1, 2, 10],
+        "no-unnecessary-type-assertion": false,
+        "no-unused-expression": false,
+        "arrow-parens": true
+    },
+    "linterOptions": {
+        "exclude": [ "./src/database/**/migrations/*.ts", "./src/handlers/schemas/*.json", "./src/docs/swagger.json" ]
+    }
+}

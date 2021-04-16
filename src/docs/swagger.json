@@ -1,0 +1,43 @@
+{
+	"openapi": "3.0.0",
+	"info": {
+		"description": "Data Service API",
+		"license": {
+			"name": "MIT"
+		},
+		"title": "0x-microservice-template",
+		"version": "beta"
+	},
+	"paths": {
+		"/": {
+			"get": {
+				"operationId": "RootHandlerRoot",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"message": {
+											"type": "string",
+											"description": ""
+										}
+									}
+								}
+							}
+						}
+					}
+				},
+				"description": ""
+			}
+		}
+	},
+	"servers": [
+		{
+			"description": "0x Microservice API",
+			"url": "https://api.0x.org/my-service"
+		}
+	]
+}

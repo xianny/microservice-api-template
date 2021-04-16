@@ -1,0 +1,27 @@
+{
+    "swagger": {
+        "entryFile": "./src/**/**/*.ts",
+        "outputFormat": "OpenApi_3",
+        "outputDirectory": "./src/docs/",
+        "version": "beta",
+        "ignore": [
+            "**/node_modules/**"
+        ],
+        "spec": {
+            "servers": [
+                {
+                    "description": "0x Microservice API",
+                    "url": "https://api.0x.org/my-service"
+                }
+            ],
+            "components": {
+                "schemas": {
+                    "BigNumber": {
+                        "description": "large number as a string",
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
