@@ -9,7 +9,7 @@ yarn install && yarn build && yarn start
 
 Authenticate your Docker daemon with AWS ECR (one-time only):
 ```
-aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 883408475785.dkr.ecr.us-east-1.amazonaws.com
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin {account}.dkr.ecr.us-east-1.amazonaws.com
 ```
 More info: https://docs.aws.amazon.com/AmazonECR/latest/userguide/registry_auth.html
 
